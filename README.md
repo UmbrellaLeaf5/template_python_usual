@@ -73,3 +73,42 @@
     ```bash
     pip install -r requirements.txt
     ```
+
+**Or just use [`uv`](https://github.com/astral-sh/uv):**
+
+```bash
+uv venv .venv
+```
+
+*   **Linux/macOS:**
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+*   **Windows (Git Bash):**
+
+    ```bash
+    source .venv/Scripts/activate
+    ```
+
+*   **Windows (Command Prompt):**
+
+    ```cmd
+    .venv\Scripts\activate
+    ```
+
+*   **Windows (PowerShell):**
+
+    ```powershell
+    .venv\Scripts\Activate.ps1
+    ```
+
+```bash
+uv pip install -r requirements.txt
+```
+
+P.S. one string:
+```bash
+uv venv .venv && source .venv/Scripts/activate && uv pip install -r requirements.txt
+```
